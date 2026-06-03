@@ -877,6 +877,22 @@ hr {
     background: #34579c;
 }
 
+.butonprojects {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.butonprojects button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #1e315e;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
 
 /* Телефон */
 

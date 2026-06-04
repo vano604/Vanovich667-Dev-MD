@@ -324,6 +324,40 @@ footer .menu2{
     opacity:1;
 }
 
+/* tt */
+
+.tt-link{
+    position:relative;
+    display:inline-block;
+}
+
+/* обе картинки */
+.tt-link img{
+    width:70px;
+    transition:0.3s;
+    display:block;
+}
+
+/* вторая картинка сверху первой */
+.img2{
+    position:absolute;
+    top:0;
+    left:0;
+
+    opacity:0;
+}
+
+/* hover эффект */
+.tt-link:hover .img1{
+    opacity:0;
+}
+
+.tt-link:hover .img2{
+    opacity:1;
+}
+
+
+
 /* Hero Div */
 
 .first {

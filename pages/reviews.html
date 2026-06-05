@@ -1,88 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanovich667 Dev MD</title>
-
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="../img/Logo.jpeg">
-
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanovich667 Dev MD</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles_reviews.css" />
 </head>
 <body>
-
-<header>
-   <div class="logo">
-    <img src="../img/Logo.jpeg" alt="Logo">
-
-    <div class="logo-text">
-        <span>Vanovich667</span>
-        <span>Dev</span>
-        <span>MD</span>
-    </div>
-</div>
-
-    <nav class="menu" id="menu">
+  <div class="page-wrap">
+    <header class="topbar">
+      <div class="logo">Иван Веб-Разработчик</div>
+      <nav class="nav-links">
         <a href="../index.html">Главная</a>
-        <a href="about.html">О мне</a>
-        <a href="services.html">Услуги</a>
-        <a href="reviews.html" class="active">Отзывы</a>
-        <a href="portfolio.html">Портфолио</a>
+        <a href="about.html">О себе</a>
+        <a href="projects.html">Проекты</a>
+        <a href="#home">Отзывы</a>
         <a href="contacts.html">Контакты</a>
-    </nav>
-
-    <div class="burger" id="burger" onclick="openMenu()">
+      </nav>
+      <button class="burger" type="button" aria-label="Меню">
         <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</header>
-
-<main>
-    <section class="reviews-page">
-        <h1>Отзывы</h1>
-        <h2>На данный момент нет отзывов...</h2>
-    </section>
-</main>
-
-<footer>
-    <nav class="menu2" id="menu2">
+      </button>
+      <div class="mobile-menu" id="mobileMenu">
         <a href="../index.html">Главная</a>
-        <a href="about.html">О мне</a>
-        <a href="services.html">Услуги</a>
-        <a href="reviews.html" class="active">Отзывы</a>
-        <a href="portfolio.html">Портфолио</a>
+        <a href="about.html">О себе</a>
+        <a href="projects.html">Проекты</a>
+        <a href="#home">Отзывы</a>
         <a href="contacts.html">Контакты</a>
-    </nav>
+      </div>
+    </header>
 
-    <div class="prava">
-        <p>Все права защищены &copy;</p>
-    </div>
-
-   <div class="socials">
-        <h3>Социальные сети</h3>
-
-        <div class="social">
-        <a href="https://vk.com/page-777107_28406709" target="_blank" class="vk-link">
-            <img src="../img/vklogo.png" class="img1">
-            <img src="../img/vklogo2.png" class="img2">
-        </a>
-        <a href="https://www.youtube.com/@Vanovich667" target="_blank" class="yt-link">
-            <img src="../img/ytlogo.png" class="img1">
-            <img src="../img/ytlogo2.png" class="img2">
-        </a>
-         <a href="https://tiktok.com/@vanovich667.dev.md" target="_blank" class="tt-link">
-            <img src="../img/ttlogo.png" class="img1">
-            <img src="../img/ttlogo2.png" class="img2">
-        </a>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <span class="hero-pretitle">Веб-разработка</span>
+          <h1 class="hero-heading">Отзывы и мнения клиентов</h1>
+          <p class="hero-description">Узнайте, что говорят наши клиенты о сотрудничестве с нами и результатах нашей работы.</p>
+          <div class="hero-actions">
+            <a class="button-primary" href="about.html">Узнать кто я</a>
+            <a class="button-secondary" href="contacts.html">Связаться со мной</a>
+          </div>
         </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="code-card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="code-lines"></div>
+          </div>
+          <div class="hero-frame">
+            <div class="screen">
+              <div class="screen-top">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="screen-code">
+                <div class="screen-line long"></div>
+                <div class="screen-line medium"></div>
+                <div class="screen-line short"></div>
+                <div class="screen-line long"></div>
+                <div class="screen-line medium"></div>
+                <div class="screen-line short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-decor"></div>
+        </div>
+      </section>
+
+
+      <section id="reviews" class="section reviews">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Отзывы</h2>
+            <p class="section-subtitle">Клиенты ценят удобство, скорость и результативность моих решений.</p>
+            <h2>На данный момент нет отзывов</h2>
+          </div>
+        </div>
+        <!-- <div class="review-grid">
+          <article class="review-card">
+            <div class="review-meta">
+              <strong>Алексей, маркетолог</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+            <p>Проект был завершен быстро, дизайн отлично соответствует бренду. Сайт работает стабильно и красиво.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-meta">
+              <strong>Мария, владелец магазина</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+            <p>Профессиональный подход и внимательное отношение к деталям. Удобная админка и адаптивный интерфейс.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-meta">
+              <strong>Игорь, руководитель</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+            <p>Отличное выполнение задачи, понятные сроки и прозрачная коммуникация. Рекомендую для сложных проектов.</p>
+          </article>
+        </div> -->
+      </section>
+
+
+      <section class="faq">
+
+    <h2>Частые вопросы</h2>
+
+    <div class="faq-grid">
+
+        <div class="faq-item">
+            <h3>⏰ Сколько времени занимает создание сайта?</h3>
+            <p>Зависит от сложности проекта. Лендинг обычно занимает меньше времени, чем многостраничный сайт.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>✏ Можно ли вносить правки?</h3>
+            <p>Да, после первого варианта сайта можно обсудить и внести необходимые изменения.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>📱 Сайт будет адаптивным?</h3>
+            <p>Да, все сайты адаптируются под телефоны, планшеты и компьютеры, но и зависит от желаний клиента.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>💻 На каких технологиях вы делаете сайты?</h3>
+            <p>HTML, CSS и JavaScript с современным подходом к дизайну и верстке.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>❓ Что нужно от клиента для начала работы?</h3>
+            <p>Обычно нужна идея, пример сайта или краткое описание того, что вы хотите получить.</p>
+        </div>
+
+          <div class="faq-item">
+              <h3>📦 Вы загружаете сайт в интернет?</h3>
+              <p>Нет, к сожалению, я не занимаюсь хостингом сайтов.</p>
+          </div>
+
     </div>
-    
-</footer>
 
-<div class="overlay" id="overlay"></div>
+</section>
 
-<script src="../js/script.js"></script>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <div class="logo">Иван Веб-Разработчик</div>
+          <p style="margin-top:16px;color:var(--muted);max-width:520px;">Портофолио веб-разработчика Ивана.</p>
+          <div class="footer-nav">
+            <a href="../index.html">Главная</a>
+            <a href="about.html">О себе</a>
+            <a href="projects.html">Проекты</a>
+            <a href="#home">Отзывы</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="color:var(--light);">Социальные сети</h4>
+          <div class="social-links">
+            <a href="https://t.me/vanovich667devmd" target="_blank" rel="noreferrer">TG</a>
+            <a href="https://github.com/vano604" target="_blank" rel="noreferrer">GH</a>
+            <a href="https://www.youtube.com/@Vanovich667" target="_blank" rel="noreferrer">YT</a>
+            <a href="https://www.vk.com/vanovich667devmd" target="_blank" rel="noreferrer">VK</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/script.js"></script>
+
 </body>
 </html>

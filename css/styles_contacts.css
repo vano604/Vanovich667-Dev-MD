@@ -1,0 +1,42 @@
+.contact-extra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.contact-box {
+    background: rgba(9, 17, 34, 0.95);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 25px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.contact-box:hover {
+    transform: translateY(-6px);
+    border-color: rgba(59,130,246,0.25);
+}
+
+.contact-box h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.contact-box p,
+.contact-box li {
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+.contact-box ol,
+.contact-box ul {
+    padding-left: 20px;
+}
+
+/* адаптив */
+@media(max-width: 768px) {
+    .contact-extra {
+        grid-template-columns: 1fr;
+    }
+}

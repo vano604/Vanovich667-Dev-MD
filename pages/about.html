@@ -1,134 +1,318 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanovich667 Dev MD</title>
-
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="../img/Logo.jpeg">
-
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanovich667 Dev MD</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles_about.css" />
 </head>
 <body>
-
-<header>
-    <div class="logo">
-    <img src="../img/Logo.jpeg" alt="Logo">
-
-    <div class="logo-text">
-        <span>Vanovich667</span>
-        <span>Dev</span>
-        <span>MD</span>
-    </div>
-</div>
-
-    <nav class="menu" id="menu">
+  <div class="page-wrap">
+    <header class="topbar">
+      <div class="logo">Иван Веб-Разработчик</div>
+      <nav class="nav-links">
         <a href="../index.html">Главная</a>
-        <a href="about.html" class="active">О мне</a>
-        <a href="services.html">Услуги</a>
+        <a href="#home">О себе</a>
+        <a href="projects.html">Проекты</a>
         <a href="reviews.html">Отзывы</a>
-        <a href="portfolio.html">Портфолио</a>
         <a href="contacts.html">Контакты</a>
-    </nav>
-
-    <div class="burger" id="burger" onclick="openMenu()">
+      </nav>
+      <button class="burger" type="button" aria-label="Меню">
         <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</header>
+      </button>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html">Главная</a>
+        <a href="#home">О себе</a>
+        <a href="projects.html">Проекты</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </header>
 
-<main class="about">
-
-    <h1>Обо мне</h1>
-
-    <div class="about-card">
-
-        <p>
-            Я начинающий веб-разработчик, создаю современные и адаптивные сайты
-            с удобным интерфейсом и аккуратным дизайном.
-        </p>
-
-        <p>
-            Работаю с HTML, CSS и JavaScript, постоянно развиваюсь и улучшаю свои навыки.
-        </p>
-
-        <div class="languages">
-            <h3>🌍 Языки сайтов</h3>
-
-            <div class="lang-list">
-                <span>🇷🇺 Русский</span>
-                <span>🇷🇴 Румынский</span>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <span class="hero-pretitle">Веб-разработка</span>
+          <h1 class="hero-heading">О себе и моём стиле разработки</h1>
+          <p class="hero-description">Привет! Меня зовут Иван, я веб-разработчик, создающий современные и адаптивные сайты.
+Я разрабатываю лендинги, портфолио и сайты для бизнеса с акцентом на дизайн, удобство и адаптивность.
+Работаю в Visual Studio Code, где пишу чистый и структурированный код.
+Основной фокус — качественные интерфейсы, которые хорошо выглядят на всех устройствах.</p>
+          <div class="hero-actions">
+            <a class="button-primary" href="#about">Узнать больше</a>
+            <a class="button-secondary" href="contacts.html">Связаться со мной</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="code-card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="code-lines"></div>
+          </div>
+          <div class="hero-frame">
+            <div class="screen">
+              <div class="screen-top">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="screen-code">
+                <div class="screen-line long"></div>
+                <div class="screen-line medium"></div>
+                <div class="screen-line short"></div>
+                <div class="screen-line long"></div>
+                <div class="screen-line medium"></div>
+                <div class="screen-line short"></div>
+              </div>
             </div>
+          </div>
+          <div class="hero-decor"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Обо мне</h2>
+            <p class="section-subtitle">Я занимаюсь разработкой современных веб-сайтов под разные задачи: от <br> простых лендингов до многостраничных сайтов.
+Создаю удобные интерфейсы, <br> адаптивный дизайн и продуманную структуру страниц.
+Каждый проект <br> стараюсь делать визуально чистым, быстрым и удобным для пользователей.</p>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Работа над проектом проходит поэтапно: анализ задачи, разработка структуры, дизайн, верстка и тестирование.
+В процессе уделяю внимание деталям, адаптивности и удобству использования.</p>
+            <p>Я создаю сайты на двух языках, адаптируя интерфейс и контент под аудиторию. Мои проекты отличаются чистым кодом, современным дизайном и удобством на всех устройствах.</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">RU</div>
+                <div>
+                  <strong>Русский язык</strong>
+                  Сайты на русском языке.
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">RO</div>
+                <div>
+                  <strong>Румынский язык</strong>
+                  Сайты на румынском языке.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card">
+            <h3>Навыки и опыт</h3>
+            <p>Я использую HTML, CSS и JavaScript для создания современных веб-интерфейсов.
+Умею делать адаптивную верстку, анимации и интерактивные элементы.
+Работаю в Visual Studio Code, соблюдаю структуру и чистоту кода, чтобы проекты были масштабируемыми и удобными для дальнейшего развития.</p>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">💻</div>
+                <div>
+                  <strong>Разработка</strong>
+                  Высокое качество UI/UX и структура кода.
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">⚡</div>
+                <div>
+                  <strong>Оптимизация</strong>
+                  Быстрая загрузка и точная работа на мобильных устройствах.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="section why">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Почему я</h2>
+            <p class="section-subtitle">Каждый проект получает индивидуальное внимание, современную эстетику и удобную структуру.</p>
+          </div>
+        </div>
+        <div class="reason-grid">
+          <div class="reason-card">
+            <div class="reason-icon">⏱</div>
+            <h3>Быстро учусь</h3>
+            <p>Осваиваю новые библиотеки и инструменты, чтобы реализовывать самые свежие идеи и задачи.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon">✨</div>
+            <h3>Чистый код</h3>
+            <p>Пишу структурированный, понятный и лёгкий в поддержке код с соблюдением современных практик.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon">🎨</div>
+            <h3>Современные дизайны</h3>
+            <p>Создаю интерфейсы с аккуратной типографикой, гармоничными цветами и продуманной композицией.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon">📱</div>
+            <h3>Адаптивные сайты</h3>
+            <p>Оптимизирую интерфейс для всех экранов, обеспечивая удобство на десктопах и смартфонах.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon">🔒</div>
+            <h3>Надёжные решения</h3>
+            <p>Работаю с безопасными подходами, ориентируясь на стабильность, удобство и качество.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class=" section stats-section">
+
+    <h2>Мои результаты</h2>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <h3>5+</h3>
+            <p>Реализованных проектов</p>
         </div>
 
-        <div class="goal">
-            <h3>🎯 Моя цель</h3>
+        <div class="stat-card">
+            <h3>100%</h3>
+            <p>Адаптивные сайты</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>HTML • CSS • JS</h3>
+            <p>Основные технологии</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section services-about">
+
+    <div class="section-head">
+        <div>
+            <h2 class="section-title">Что я разрабатываю</h2>
+            <p class="section-subtitle">
+               Осмотри какие сайты ты можешь приобрести за разумную цену.
+            </p>
+        </div>
+    </div>
+
+    <div class="section services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">🏷️</div>
+            <h3>Сайт-визитка</h3>
+            <span>💵 400 – 1000 MDL</span>
             <p>
-                Стать профессиональным веб-разработчиком и создавать качественные,
-                удобные и современные сайты.
+                Небольшой сайт с основной информацией,
+                услугами и контактами.
             </p>
         </div>
 
-        <div class="approach">
-            <h3>🧠 Подход к работе</h3>
+        <div class="service-card">
+            <div class="service-icon">🚀</div>
+            <h3>Лендинг</h3>
+            <span>💵 500 – 3500 MDL</span>
             <p>
-                Я стараюсь делать сайты простыми, понятными и удобными для пользователей,
-                уделяя внимание дизайну и адаптивности.
+                Одностраничный сайт для продвижения
+                услуги, товара или бизнеса.
             </p>
         </div>
 
-        <div class="what-i-do">
-    <h3>💻 Что я делаю</h3>
-
-    <p>✔ Создаю сайты-визитки</p>
-    <p>✔ Делаю лендинги</p>
-    <p>✔ Верстаю адаптивные страницы</p>
-    <p>✔ Делаю простой и понятный UI</p>
-</div>
-
-    </div>
-
-</main>
-
-<footer>
-    <nav class="menu2" id="menu2">
-        <a href="../index.html">Главная</a>
-        <a href="about.html" class="active">О мне</a>
-        <a href="services.html">Услуги</a>
-        <a href="reviews.html">Отзывы</a>
-        <a href="portfolio.html">Портфолио</a>
-        <a href="contacts.html">Контакты</a>
-    </nav>
-
-    <div class="prava">
-        <p>Все права защищены &copy;</p>
-    </div>
-
-    <div class="socials">
-        <h3>Социальные сети</h3>
-
-        <div class="social">
-        <a href="https://vk.com/page-777107_28406709" target="_blank" class="vk-link">
-            <img src="../img/vklogo.png" class="img1">
-            <img src="../img/vklogo2.png" class="img2">
-        </a>
-        <a href="https://www.youtube.com/@Vanovich667" target="_blank" class="yt-link">
-            <img src="../img/ytlogo.png" class="img1">
-            <img src="../img/ytlogo2.png" class="img2">
-        </a>
-         <a href="https://tiktok.com/@vanovich667.dev.md" target="_blank" class="tt-link">
-            <img src="../img/ttlogo.png" class="img1">
-            <img src="../img/ttlogo2.png" class="img2">
-        </a>
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Портфолио</h3>
+            <span>💵 700 – 2000 MDL</span>
+            <p>
+                Сайт для демонстрации проектов,
+                навыков и работ.
+            </p>
         </div>
+
+        <div class="service-card">
+            <div class="service-icon">📄</div>
+            <h3>Каталог товаров</h3>
+            <span>💵 500 – 6000 MDL</span>
+            <p>
+                Каталог продукции с удобной
+                структурой и просмотром товаров.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Корпоративный сайт</h3>
+            <span>💵 2500 – 15000 MDL</span>
+            <p>
+                Полноценный сайт компании
+                с несколькими страницами.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Мини-сайт</h3>
+            <span>💵 400 – 1500 MDL</span>
+            <p>
+                Небольшой сайт для быстрого
+                запуска идеи или проекта.
+            </p>
+        </div>
+
     </div>
-    
-</footer>
 
-<div class="overlay" id="overlay"></div>
+</section>
 
-<script src="../js/script.js"></script>
+<section class="section cta-big">
+
+    <h2>Готовы создать современный сайт?</h2>
+
+    <p>
+        Помогу реализовать проект с современным дизайном,
+        адаптивной версткой и удобным интерфейсом.
+    </p>
+
+    <a href="contacts.html">Связаться со мной</a>
+
+</section>
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <div class="logo">Иван Веб-Разработчик</div>
+          <p style="margin-top:16px;color:var(--muted);max-width:520px;">Портофолио веб-разработчика Ивана.</p>
+          <div class="footer-nav">
+            <a href="../index.html">Главная</a>
+            <a href="#home">О себе</a>
+            <a href="projects.html">Проекты</a>
+            <a href="reviews.html">Отзывы</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="color:var(--light);">Социальные сети</h4>
+          <div class="social-links">
+            <a href="https://t.me/vanovich667devmd" target="_blank" rel="noreferrer">TG</a>
+            <a href="https://github.com/vano604" target="_blank" rel="noreferrer">GH</a>
+            <a href="https://www.youtube.com/@Vanovich667" target="_blank" rel="noreferrer">YT</a>
+            <a href="https://www.vk.com/vanovich667devmd" target="_blank" rel="noreferrer">VK</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/script.js"></script>
+
 </body>
 </html>

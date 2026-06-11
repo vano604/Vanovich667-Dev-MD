@@ -146,6 +146,45 @@
     text-align: center;
 }
 
+
+    .select {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--light);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: #94a3b8;
+    }
+
+    .select .header_btn{
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--light);
+      padding: 8px 12px;
+      margin: 5px 5px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: #7e858f;
+      transition: all ease-out 0.3s;
+    }
+
+    .select .header_btn:hover{
+      background-color: #1e315e;
+      border: 1px solid #1d4ed8;;
+      transform: translateY(-3px);
+      transition: all ease 0.3s;
+    }
+
+    .select .header_btn_active{
+      background-color: #1e315e;
+      border: 1px solid #1d4ed8;
+    }
+
+
+
 /* Адаптив */
 @media (max-width: 768px) {
     .services-grid {
